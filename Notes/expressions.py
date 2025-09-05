@@ -32,10 +32,14 @@ average=total /4
 print( "average age", age_one, "-", age_two, "-", age_three, "-", age_four, "/", 4, "=", average )
 
 #List ALL of the different mathematical operators (Give me the symbol and tell me what it does)
+      # + is adding    # - is subtract   # * is multiply # / is divide
      # math equations
-num_one=12
-num_two=4
+
+num_one = float(input("give me a number:\n"))
+num_two = int(input("give me a number:\n"))
+num_one += num_two
 print("addtion", num_one + num_two)
+
 print("subrtaction", num_one - num_two)
 print("multiply", num_one * num_two)
 print("division", num_one / num_two)
@@ -43,13 +47,30 @@ print("exponets", num_one ** num_two)
 print("integer divistion", num_one // num_two)
 print("modulo (remander)", num_one % num_two)
 
+#intergers can only be a whole numbers
+ #float is a decimal
+
 
 #List ALL of the different assignment operators (Give me the symbols and what it does)
-    # + is adding    # - is subtract   # * is multiply # / is divide
+num_one += num_two
+print("addtiom(+):")
+num_one -= num_two
+print("subrtaction(-):", num_one )
+num_one *= num_two
+print("multiply(*):", num_one)
+num_one /= num_two
+print("division(/):", num_one)
+num_one **= num_two
+print("exponets(**):", num_one)
+num_one //= num_two
+print("integer divistion(//):", num_one)
+num_one %= num_two
+print("modulo (remander)(%):", num_one)
 
 
+num_one = float(input("give me a number:\n"))
+num_two = int(input("give me a number:\n"))
+
+print("(3*5**2/15)-(5-2**2)=" ,(3*5**2/15)-(5-2**2))
 #Why are expressions so important in programming?
     #
-
-
- 
