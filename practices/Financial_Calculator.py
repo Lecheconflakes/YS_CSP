@@ -27,4 +27,4 @@ print("your utilities are $",utilities , "and that is", utilities_pct, "%, of yo
 print("your groceries are $", groceries, " and that is", groceries_pct, " %, of your income")
 print("your transport is $", transportation, "and that is", transportation_pct, "%, of your income")
 print(" you should save", savings, " a month, that is", savings_pct, "%, of your income")
-print("you should have", spending_money, "of moeny left over for spending")
+print("you should have", spending_money, "of money left over for spending")
