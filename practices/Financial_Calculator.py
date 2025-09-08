@@ -10,3 +10,4 @@
 
 #total expenses: 2150 (rent + utitliies + groceries+ transportation)
 #spending: 550 (income- total expenses - savings)
+
