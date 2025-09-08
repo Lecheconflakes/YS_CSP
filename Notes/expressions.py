@@ -74,3 +74,18 @@ num_two = int(input("give me a number:\n"))
 print("(3*5**2/15)-(5-2**2)=" ,(3*5**2/15)-(5-2**2))
 #Why are expressions so important in programming?
     #
+
+
+
+    #income $3000 input
+#rent 1200 input
+#untilties 250 input
+# groceries 200 input
+#transportation 500 input
+          #income 
+#savings (3000*.1) 
+               #rent/income*100
+#percent_rent; 1200/300 48%
+
+#total expenses: 2150 (rent + utitliies + groceries+ transportation)
+#spending: 550 (income- total expenses - savings)
