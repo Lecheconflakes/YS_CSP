@@ -50,7 +50,7 @@ print("welcome to my program", name)
 numOne = "1" 
 numTwo = "3" 
 print( numOne + numTwo)
-
+#prints 13 enstead of 4 
 
    # Run-time Error
    # a problme in the code that will break the code when it tries to run. not gonna pop up any syntax errors , code breaks when it is running
@@ -64,14 +64,19 @@ print(sentence.find("brown"))
 print(sentence[10:15]) #slice
 
 #concatenate (add)
-
+# using + to combine strings
+string1 = "hello"
+string2 = "world"
+result = string1 + " " + string2
+print(result)
 
 
 #.upper() 
 name = input('what is your name?\n').strip().upper() 
   # uppercases all the letters
 
-#.lower()name = input('what is your name?\n').strip().lower()
+#.lower()
+name = input('what is your name?\n').strip().lower()
 # lowercases all letters
 
 #.strip()
