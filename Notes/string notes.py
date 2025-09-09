@@ -20,9 +20,7 @@ name = input('what is your name?\n').strip().title()
 
 first_name = input("what is your first name?\n")
 
-last_name + input
-
-" "
+last_name = input
  
 sentence= " the quick brown fox jumps over the lazy dog."
 
@@ -33,22 +31,54 @@ print("welcome to my program", name)
 
 
 #How do stupid proofing and sanitization relate to each other?
+# to keep the user from messing around with their inputs.
+
+# a bug is any error that keeps it from running or running inproperly
 
 
-#What is debugging?
+#What is debugging? 
+# is fixing my codes problems, hel
 
 #How do you debug the different types of errors?
+   #Syntax Error
+   #like grammer in english, missspelling a variable, the computer cant read it.
+   # '" forgotten comas, = or with out (), + / - *, indenting 
 
+
+   #Logic Error
+   #its where our code does somthing we didnt expect. this is a problem with the steps we took, too complete our process
+numOne = "1" 
+numTwo = "3" 
+print( numOne + numTwo)
+
+
+   # Run-time Error
+   # a problme in the code that will break the code when it tries to run. not gonna pop up any syntax errors , code breaks when it is running
+letter = "a"
+int(letter)
 #Describe what each of the methods below does:
 
-#find()
+#.find()
+print(sentence.find("brown"))
+  #finds the word or sentence
+print(sentence[10:15]) #slice
 
 #concatenate (add)
 
-#upper() #name = input('what is your name?\n').strip().upper()
 
-#lower()name = input('what is your name?\n').strip().lower()
 
-#strip() name = input('what is your name?\n').strip()
+#.upper() 
+name = input('what is your name?\n').strip().upper() 
+  # uppercases all the letters
 
-#name = input('what is your name?\n').strip().capitalize()
+#.lower()name = input('what is your name?\n').strip().lower()
+# lowercases all letters
+
+#.strip()
+name = input('what is your name?\n').strip()
+#strips of unessary spaces
+
+# .capitalize()
+name = input('what is your name?\n').strip().capitalize()
+# capitalized the frist two letters of the name 
+
