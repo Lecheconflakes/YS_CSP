@@ -17,9 +17,9 @@ print(f"hello {name}")
 
 #How to write a function in Python
 #The indents must match or the code will break.
-#def welcome():
-#    name=input("what is your name\n")
-#    print(f"hello {name}")
+def welcome():
+    name=input("what is your name\n")
+    print(f"hello {name}")
 
 print(f"the function is over")
     #not gonna print unless you tell it to. use the name of the function to have it work.
@@ -37,12 +37,12 @@ print(f"the function is over")
 #def add(number, num_two ):
     #  number = number + num_two
 
-#num_one = 12
-#num_two = 14
-#add(num_one)
-#add(4, 23)
-#add(9, 20)
-#add(87, 12)
+num_one = 12
+num_two = 14
+add(num_one)
+add(4, 23)
+add(9, 20)
+add(87, 12)
         #variables are used when i want to do the same thing over again.
 
 
