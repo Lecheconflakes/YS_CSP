@@ -61,21 +61,11 @@ task = input("what is your current task?")
 
 print(f"Hello,{clean(name)}. I heard you are {clean(task)}, that is nice. The color {clean(color)} is a great choice.")
 
-#2nd example
-
-def believe(sentence):
-    length = len(sentence)
-    spot_one =random.randint(0, length, -1)
-    spot_two = random.randint(0, length, -1)
-    spot_three = random.randint(0, length, -1)
-    full_sentence = sentence.split()
-    full_sentence.insert(spot_one, "believe it!")
-    full_sentence.insert(spot_two, "believe it!")
-    full_sentence.insert( spot_three, "believe It!")
-    
+#
 
 
 
 
 
 
+u
