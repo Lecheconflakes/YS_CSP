@@ -62,10 +62,3 @@ task = input("what is your current task?")
 print(f"Hello,{clean(name)}. I heard you are {clean(task)}, that is nice. The color {clean(color)} is a great choice.")
 
 #
-
-
-
-
-
-
-u
