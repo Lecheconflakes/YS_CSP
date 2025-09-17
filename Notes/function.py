@@ -39,10 +39,10 @@ print(f"the function is over")
 
 num_one = 12
 num_two = 14
-add(num_one)
-add(4, 23)
-add(9, 20)
-add(87, 12)
+#add(num_one)
+#add(4, 23)
+#add(9, 20)
+#add(87, 12)
         #variables are used when i want to do the same thing over again.
 
 
@@ -61,4 +61,19 @@ task = input("what is your current task?")
 
 print(f"Hello,{clean(name)}. I heard you are {clean(task)}, that is nice. The color {clean(color)} is a great choice.")
 
-#
+
+# Define the function
+def say_hello(name):
+    print(f"Hello, {name}! Nice to meet you.")
+
+# Test the function with five different names
+say_hello("Yaretzi")
+say_hello("Carlos")
+say_hello("Amina")
+say_hello("Liam")
+
+
+# Optional: Let the user input a name
+# Uncomment the lines below if you want to try user input
+# user_name = input("Enter your name: ")
+# say_hello(user_name)
