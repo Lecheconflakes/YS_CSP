@@ -18,9 +18,8 @@ print(f"the hour is {hour}")
         #while loops have a set condistion that it will check to see if it is true and the loop will run so long as the conddition is true
 
 #What is iteration
-#teration means repeating a set of instructions in a program until a certain condition is met or for a specific number of times. It’s like telling the computer, “Keep doing this until I say stop.”
-
-
+#teration means repeating a set of instructions in a program until a certain condition is met or for a specific number of times. It’s like telling the computer, “Keep doing this until I say stop.”#is once instance of a loop
+#one instance of a loop, we literate by looping over and over again, are iteration is that instance of a loop.
 
 #What are lists? 
 #   are our first complex data type
