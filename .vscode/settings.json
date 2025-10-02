@@ -1,5 +1,8 @@
 {
     "files.associations": {
-        "varible_notes-C.C": "cpp"
-    }
+        "varible_notes-C.C": "cpp",
+        "Variables.C": "cpp",
+        "varibables.C": "cpp"
+    },
+    "C_Cpp.default.compilerPath": "C:/msys64/ucrt64/bin/g++.exe"
 }
