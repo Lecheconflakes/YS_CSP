@@ -43,12 +43,15 @@ fgets(name, sizeof(name), stdin);
         // !! list of characters are for a string -s
 
 //How do you declare and initialize an integer variable named "age" with the value 25 in C?
-    //
+    // int age = 25;
 
 
 
 ///What is the difference between printf() and scanf() functions in C?
-
+/*
+ printf() is an output
+ scanf() is used for input
+*/
 
 
 //How do you add comments in C?
@@ -56,23 +59,26 @@ fgets(name, sizeof(name), stdin);
         multi line comment
         */
 //What is the purpose of the #include <stdio.h> line at the beginning of a C program?
-
-
+    /*stdio.h stands for "Standard Input/Output." It provides declarations for functions,
+    macros, and types related to standard input and output operations in C.*/
 
 //In C, what is the significance of the main() function?
-
+    /*it serves as the entry point of a program; it's the first function that
+    gets executed when the program is run*/
 
 
 //What is the difference between %d and %f format specifiers in printf()?
-
-
-
-//How do you print a newline character in C?
-
+    //%d is used for int while %f is used for floats
+//printf("This is the first line.\n");
 
 
 //What is the purpose of the & symbol when using scanf() to get user input?
-
+// the & symbol is used as a adressing  opporator when using scanf()
 
 
 //How do you declare a constant in C? Provide an example.
+//you can use either the const keyword or the #define preprocessor directive. 
+/*char name[50];
+printf("Enter your name: ");
+scanf("%s", name);*/
+// the other example is at the top :)
