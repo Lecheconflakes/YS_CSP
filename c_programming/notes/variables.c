@@ -81,4 +81,4 @@ fgets(name, sizeof(name), stdin);
 /*char name[50];
 printf("Enter your name: ");
 scanf("%s", name);*/
-// the other example is at the top :)
+// the other example is at the top//
