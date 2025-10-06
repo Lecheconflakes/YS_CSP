@@ -11,9 +11,14 @@ int main(void){
 
 printf("what is your letter grade: ");
 scanf("%c", &grade);
+while (getchar() != '\n');
+
 
 printf("tell me a number: ");
 scanf("%d", &num);
+while (getchar() != '\n');
+
+
 //  input lets me get a space
 printf("tell me a your name: ");
 fgets(name, sizeof(name), stdin);
