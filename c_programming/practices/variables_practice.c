@@ -6,11 +6,11 @@ int main(){
     int lucky_number = 4;
     float gpa = 3.95;
     char breakfast[] = "pan dulce on cafe";
-    char school_name = "UCAS";
+    char school_name[] = "UCAS";
     int current_year = 2025;
-    char eye_color = "brown";
+    char eye_color[] = "brown";
     int age = 15;
-    char favorite_subject = "Biology";
+    char favorite_subject[] = "Biology";
 
     printf("%s\n",name);
     printf("%d\n", lucky_number);
