@@ -3,15 +3,16 @@
 #include <stdio.h>
 
 int main(){
-Printf("────── ⋆⋅☆⋅⋆ ──────\n");
+
+printf(".────── ⋆⋅☆⋅⋆ ──────.\n");
 printf("Welome to finacial calculator\n");
 printf("This prgram will help plan your monthly budget.\n");
-printf("You will enter your income and expenses.\n ") ;
+printf("You will enter your income and expenses.\n ");
 printf("We'll calculate\n");
 printf("How much to save\n");
 printf("How much left to spend\n");
 printf("And the percent of each.\n");
-printf("────── ⋆⋅☆⋅⋆ ──────\n")
+printf(".────── ⋆⋅☆⋅⋆ ──────.\n");
 
 float income,rent, utilities, groceries, transportation;
 float savings, total_exp, leftover;
@@ -32,11 +33,18 @@ scanf("%f", &transportation);
 savings = income * 0.10;
 total_exp = rent + utilities + groceries + transportation + savings;
 leftover = income - total_exp;
+rent_pct = income * 0.10;
+util_pct = income * 0.10;
+transport_pct = income *0.10;
 
 printf("Monthly Budget Summary\n");
-printf("income: $%.2f\n", income);
-printf("Savings: $%.2f\n", savings);
-printf("Rent/Mortage: $%.2f\n", rent, rent_pct);
-printf("Utilities: $%.2f()")
+printf("income:$%.2f\n", income);
+printf("Savings:$%.2f\n", savings);
+printf("Rent/Mortage:$%.2f\n", rent, "", rent_pct);
+printf("Utilities:$%.2f\n", utilities, util_pct);
+printf("Transporaton:$%.2f\n", transportation, transport_pct);
+printf("Money left over:$%.2f\n", leftover);
+return 0;
 
 }
+ 
