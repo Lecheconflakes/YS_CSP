@@ -3,16 +3,17 @@
 #include <string.h>
 
 int main(void){
-    char name[35];
+    char name[100];
+    char deco_name[100];
 
     printf("Please enter your name: \n");
     scanf("%s", name);
 
-    strcat( name,"⋇⊶⊰❣⊱⊷⋇");
-    printf("%s", name);
-    strcat("⋇⊶⊰❣⊱⊷⋇", name);
-    printf("%s", name);
 
+    strcat( deco_name,"⋆˙⊹❀♡⁭");
+    strcat(deco_name, name);
+    strcat(deco_name, "♡❀˖⁺. ༶");
+    printf("%s",deco_name);
 
     return 0;
 
