@@ -50,7 +50,7 @@ printf("%d\n", add(50,37));
     //the terms "arguments" and "parameters" relate to how data is passed to functions.
 
 //How do arguments and parameters work together?
-    //
+    // parameters ate placeholders arguments fill in those placeholders when functions run
 
 //How to use parameters and arguments in C
     // for parameters we put what we want to chnage in the output
@@ -59,9 +59,9 @@ printf("%d\n", add(50,37));
     // taking one thing abd replacing it the call with it
 
 //How do return statements change how you define a function in C?
-
+    // tells a funtion to send a value back to where it was called
 
 //What do return statements do with the information?
-
+    //send information bacl to where it was called
 
 
