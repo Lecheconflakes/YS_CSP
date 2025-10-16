@@ -2,8 +2,19 @@
 
 #include <stdio.h>
 
-int main(){
+float getinput(const char* question){
+    float value;
+    printf("%s", question);
+    scanf("%f", &value);
+    return value;
+}
 
+float getpercet(float income, float expense){
+    return(expense / income) * 100;
+    
+}
+
+int main(){
 printf(".────── ⋆⋅☆⋅⋆ ──────.\n");
 printf("Welome to finacial calculator\n");
 printf("This program will help plan your monthly budget.\n");
@@ -12,34 +23,21 @@ printf("We'll calculate How much to save\n");
 printf("How much left to spend and the percent of each.\n");
 printf(".────── ⋆⋅☆⋅⋆ ──────.\n");
 
-float income,rent, utilities, groceries, transportation;
-float savings, total_exp, leftover;
-float rent_pct, util_pct, groceries_pct, transport_pct, savings_pct;
+float income = getinput("Enter your monthly income: $");
+float rent = getinput("enter your monthly rent/mortage: $");
+float utilities = getinput("Enter your monthly utilities cost: $");
+float groceries = getinput("enter your monthly groceries cost: $");
+float transportation = getinput("enter your monthly transportation cost: $");
 
-printf("Enter your monthly income: $");
-scanf("%f", &income);
+float savings = income * 0.10;
+float total_exp = rent + utilities + groceries + transportation + savings;
+float leftover = income - total_exp;
 
-printf("enter your monthly rent/mortage: $");
-scanf("%f", &rent);
-
-printf("Enter your monthly utilities cost: $");
-scanf("%f",  &utilities);
-
-printf("enter your monthly groceries cost: $");
-scanf("%f", &groceries);
-
-printf("enter your monthly transportation cost: $");
-scanf("%f", &transportation);
-
-savings = income * 0.10;
-total_exp = rent + utilities + groceries + transportation + savings;
-leftover = income - total_exp;
-
-rent_pct = (rent/income) * 100;
-util_pct = (utilities / income) * 100;
-groceries_pct = (groceries/ income) *100;
-transport_pct = (transportation / income) * 100;
-savings_pct = (savings / income) * 100;
+float rent_pct = getpercet(income, rent);
+float util_pct = getpercet( income, utilities);
+float groceries_pct = getpercet(income, groceries);
+float transport_pct = getpercet(income, transportation);
+float savings_pct = getpercet(income, savings);
 
 printf("──────Monthly Budget Summary──────\n");
 printf("income:$%.2f\n", income);
