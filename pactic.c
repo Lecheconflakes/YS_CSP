@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 char board[3][3];
 
@@ -35,32 +37,41 @@ int isBoardFull() {
     return 1;
 }
 
+void computerMove() {
+    int move, row, col;
+    do {
+        move = rand() % 9 + 1;
+        row = (move - 1) / 3;
+        col = (move - 1) % 3;
+    } while (board[row][col] == 'X' || board[row][col] == 'O');
+    board[row][col] = 'O';
+}
+
 int main() {
-    int move;
-    char player = 'X';
+    int move, row, col;
     char winner = ' ';
+    srand(time(NULL));
 
     initializeBoard();
 
     while (1) {
         displayBoard();
-        printf("Player %c, enter your move (1-9): ", player);
+        printf("Your move (1-9): ");
         scanf("%d", &move);
 
-        int row = (move - 1) / 3;
-        int col = (move - 1) % 3;
+        row = (move - 1) / 3;
+        col = (move - 1) % 3;
 
         if (move < 1 || move > 9 || board[row][col] == 'X' || board[row][col] == 'O') {
             printf("Invalid move. Try again.\n");
             continue;
         }
 
-        board[row][col] = player;
+        board[row][col] = 'X';
         winner = checkWinner();
-
-        if (winner == 'X' || winner == 'O') {
+        if (winner == 'X') {
             displayBoard();
-            printf("Player %c wins!\n", winner);
+            printf("You win!\n");
             break;
         }
 
@@ -70,7 +81,19 @@ int main() {
             break;
         }
 
-        player = (player == 'X') ? 'O' : 'X';
+        computerMove();
+        winner = checkWinner();
+        if (winner == 'O') {
+            displayBoard();
+            printf("Computer wins!\n");
+            break;
+        }
+
+        if (isBoardFull()) {
+            displayBoard();
+            printf("It's a tie!\n");
+            break;
+        }
     }
 
     return 0;
