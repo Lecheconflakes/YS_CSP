@@ -34,7 +34,7 @@ void displayBoard() {
     printf("%s\n", board3);
     printf("%s\n", board3);
     
-    */
+    
 #include <stdio.h>
 
     char board[3][3];
@@ -54,3 +54,4 @@ void displayBoard() {
     }
     printf("\n");
 }
+*/
