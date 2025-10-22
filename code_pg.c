@@ -17,8 +17,8 @@ void board(void){
     }
 }
 // this main function that starts the game, it calls the board function to shoe the game layout.
-int main(void){
+    int main(void){
     board(); // show the board before the game starts
-    game_play(); // start of the game loop
-    return 0;
+   game_play(); // start of the game loop
+   return 0;
 }
